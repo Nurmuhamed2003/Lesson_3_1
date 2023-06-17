@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/_email"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@color/grey"
+        android:drawableLeft="@drawable/ic_icend1"
+        android:drawablePadding="40dp"
+        android:padding="10dp"
+        android:hint="Введите почту"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:barrierMargin="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginTop="10dp"
+        app:layout_marginBaseline="10dp">
+
+    </EditText>
+
+
+    <EditText
+        android:drawableLeft="@drawable/ic_icend2"
+        app:layout_constraintTop_toTopOf="@id/_email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="90dp"
+        android:id="@+id/_themes"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@color/grey"
+        android:padding="10dp"
+        android:drawablePadding="40dp"
+        android:hint="Введите тему сообщения"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+    </EditText>
+
+
+    <EditText
+        app:layout_constraintTop_toTopOf="@id/_themes"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:drawableLeft="@drawable/ic_icend"
+        android:id="@+id/_message"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="90dp"
+    android:background="@color/grey"
+        android:padding="10dp"
+        android:drawablePadding="40dp"
+        android:hint="Введите сообщение"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+    </EditText>
+
+    <Button
+        android:id="@+id/_btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Отправить"
+        android:textSize="15dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/_message"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
